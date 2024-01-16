@@ -33,7 +33,7 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=${DATABASE_ROOT_PASSWORD}
       - MYSQL_DATABASE=${DATABASE_NAME}
-      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}
     ports:
       - "3306:3306"

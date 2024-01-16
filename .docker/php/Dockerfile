@@ -12,7 +12,7 @@ RUN composer --version
 
 # Install NPM
 RUN curl -sL https://deb.nodesource.com/setup_16.x | bash
-RUN apt-get install nodejs -y
+RUN apt-get install nodejs npm -y
 RUN node -v && npm -v
 
 # Remove APT cache
